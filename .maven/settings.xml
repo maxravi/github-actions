@@ -21,9 +21,9 @@
       </activation>
       <repositories>
         <repository>
-          <id>MuleRepository</id>
+          <id>central</id>
           <name>MuleRepository</name>
-          <url>https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/</url>
+          <url>https://repo1.maven.org/maven2</url>
           <layout>default</layout>
           <releases>
             <enabled>true</enabled>
@@ -31,7 +31,18 @@
           <snapshots>
             <enabled>true</enabled>
           </snapshots>
-        </repository>     
+        </repository>   
+         <repository>
+            <id>github</id>
+           <url>https://maven.pkg.github.com/maxravi/github-actions</url>
+          <layout>default</layout>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+         </repository>
       </repositories>
     </profile>
   </profiles>
