@@ -7,7 +7,7 @@
 
   <servers>
     <server>
-      <id>MuleRepository</id>
+      <id>github</id>
       <username>${nexus_username}</username>
       <password>${nexus_password}</password>
     </server>
