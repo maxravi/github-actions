@@ -9,6 +9,7 @@ Ravi
 
 > **Note**
 > 
+> 
 > This is a simple Mule application to test. Please update the `app.name` and `env` properties from the `pom.xml` to your own.
 
 ## Other resources
