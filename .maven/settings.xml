@@ -9,7 +9,7 @@
     <server>
       <id>github</id>
       <username>maxravi</username>
-      <password>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</password>
+      <password>${NEXUS_PASSWORD}</password>
     </server>
   </servers>
 
