@@ -157,10 +157,10 @@
 	</pluginRepositories>
 	<distributionManagement>
     <repository>
-      <id>Repository</id>
-      <name>Corporate Repository</name>
+      <id>github</id>
+      <name>github</name>
       <url>https://maven.pkg.github.com/maxravi/github-actions</url>
-      <layout>default</layout>
+     
     </repository>
   </distributionManagement>
 
