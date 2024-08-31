@@ -15,7 +15,7 @@
 
   <profiles>
     <profile>
-      <id>Mule</id>
+      <id>github</id>
       <activation>
         <activeByDefault>true</activeByDefault>
       </activation>
