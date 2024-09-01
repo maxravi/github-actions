@@ -75,7 +75,7 @@ jobs:
           CLOUDHUB_USERNAME: ${{ secrets.anypoint_platform_username }}
           CLOUDHUB_PASSWORD: ${{ secrets.anypoint_platform_password }}
         run: mvn deploy -DskipMunitTests -DmuleDeploy \
-         -Dmule.artifact=test \
+         
          -Danypoint.username="$CLOUDHUB_USERNAME" \
          -Danypoint.password="$CLOUDHUB_PASSWORD" \
          -Ddecryption.key=12345
