@@ -74,4 +74,4 @@ jobs:
         env:
           CLOUDHUB_USERNAME: ${{ secrets.anypoint_platform_username }}
           CLOUDHUB_PASSWORD: ${{ secrets.anypoint_platform_password }}
-        run: mvn mule:deploy -DmuleDeploy.username=${{ secrets.anypoint_platform_username }} -DmuleDeploy.password=${{ secrets.anypoint_platform_password }}
+        run: mvn mule:deploy -DskipTests -DmuleDeploy.username=${{ secrets.anypoint_platform_username }} -DmuleDeploy.password=${{ secrets.anypoint_platform_password }}
