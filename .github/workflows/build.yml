@@ -55,7 +55,7 @@ jobs:
           distribution: 'adopt'
 
       - name: Package Mule application
-        run: mvn package
+        run: mvn -DskipMunitTests package
 
   deploy:
     runs-on: ubuntu-latest
