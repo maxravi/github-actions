@@ -14,7 +14,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <anypoint.platform.version>7.8.0</anypoint.platform.version>
-		<app.runtime>4.6.7:4</app.runtime>
+		<app.runtime>4.6.7</app.runtime>
 		<mule.maven.plugin.version>4.2.1</mule.maven.plugin.version>
 		<app.name>amartinez17-github-actions</app.name>
 		<env>Sandbox</env>
@@ -39,7 +39,10 @@
 						<uri>https://anypoint.mulesoft.com</uri>
 						<releaseChannel>NONE</releaseChannel>
 						<javaVersion>8</javaVersion>
-						<muleVersion>${app.runtime}</muleVersion>
+						<muleVersion>
+							<version>${app.runtime}</version>
+							<releaseChannel>LTS</releaseChannel>
+						</muleVersion>
 						<username>${anypoint.username}</username>
 						<password>${anypoint.password}</password>
 						<applicationName>${app.name}</applicationName>
