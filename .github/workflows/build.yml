@@ -37,8 +37,10 @@ jobs:
         with:
           java-version: '11'
           distribution: 'adopt'
+      - name: Clean Maven Cache
+        run: rm -rf ~/.m2/repository
       - name: Test with Maven
-        run: mvn test
+        run: mvn clean test
       - name: Upload MUnit reports
         uses: actions/upload-artifact@v3
         with:
