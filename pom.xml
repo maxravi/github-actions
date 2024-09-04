@@ -151,11 +151,19 @@
 			<url>https://maven.anypoint.mulesoft.com/api/v3/maven</url>
 			<layout>default</layout>
 		</repository>
-		   <repository>
+		
+
+		 <repository>
         <id>mulesoft-releases</id>
-        <name>MuleSoft Releases</name>
+        <name>MuleSoft Releases Repository</name>
+        <url>https://repository.mulesoft.org/nexus/content/repositories/releases/</url>
+    </repository>
+    <repository>
+        <id>mulesoft-public</id>
+        <name>MuleSoft Public Repository</name>
         <url>https://repository.mulesoft.org/nexus/content/repositories/public/</url>
     </repository>
+		
 	</repositories>
 
 	<pluginRepositories>
