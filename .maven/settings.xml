@@ -12,7 +12,20 @@
       <password>${nexus_password}</password>
     </server>
   </servers>
-
+<mirrors>
+    <mirror>
+        <id>mulesoft-repository</id>
+        <mirrorOf>mulesoft-public</mirrorOf>
+        <url>https://repository.mulesoft.org/nexus/content/repositories/public/</url>
+        <layout>default</layout>
+        <releases>
+            <enabled>true</enabled>
+        </releases>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+    </mirror>
+</mirrors>
   <profiles>
     <profile>
       <id>Mule</id>
