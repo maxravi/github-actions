@@ -27,7 +27,7 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
-    needs: []
+    needs: build
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -37,9 +37,13 @@ jobs:
         with:
           java-version: '11'
           distribution: 'adopt'
-
-      - name: Run MUnit tests
-        run: echo ""
+      - name: Test with Maven
+        run: mvn test
+      - name: Upload MUnit reports
+        uses: actions/upload-artifact@v3
+        with:
+          name: munit-test-reports
+          path: target/site/munit/coverage/
 
   package:
     runs-on: ubuntu-latest
