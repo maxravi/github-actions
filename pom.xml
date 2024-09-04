@@ -14,7 +14,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <anypoint.platform.version>7.8.0</anypoint.platform.version>
-		<app.runtime>4.6.0-lts</app.runtime>
+		<app.runtime>4.6.7</app.runtime>
 		<mule.maven.plugin.version>4.2.1</mule.maven.plugin.version>
 		<app.name>amartinez17-github-actions</app.name>
 		<env>Sandbox</env>
@@ -45,7 +45,7 @@
 						<password>${anypoint.password}</password>
 						<applicationName>${app.name}</applicationName>
 						<environment>${env}</environment>
-						<releaseChannel>LONG_TERM_SUPPORT</releaseChannel>
+						<releaseChannel>LTS</releaseChannel>
 
 						<workerType>MICRO</workerType>
 						<region>us-east-2</region>
