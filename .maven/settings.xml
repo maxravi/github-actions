@@ -21,8 +21,8 @@
       </activation>
       <repositories>
         <repository>
-          <id>MuleRepository</id>
-          <name>MuleRepository</name>
+          <id>>mulesoft-releases</id>
+          <name>>mulesoft-releases</name>
           <url>https://repository.mulesoft.org/nexus/content/repositories/public/</url>
           <layout>default</layout>
           <releases>
